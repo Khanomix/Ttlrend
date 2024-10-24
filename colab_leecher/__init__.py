@@ -5,7 +5,7 @@ from uvloop import install
 from pyrogram.client import Client
 
 # Read the dictionary from the txt file
-with open("/credentials.json", "r") as file:
+with open("/opt/render/project/src/colab_leecher/credentials.json", "r") as file:
     credentials = json.loads(file.read())
 
 API_ID = credentials["API_ID"]
