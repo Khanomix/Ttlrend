@@ -26,7 +26,7 @@ from colab_leecher.utility.variables import (
 
 def isLink(_, __, update):
     if update.text:
-        if "/" in str(update.text) or "/home" in str(update.text):
+        if "/opt/render/project/src/colab_leecher" in str(update.text) or "/home" in str(update.text):
             return True
         elif update.text.startswith("magnet:?xt=urn:btih:"):
             return True
