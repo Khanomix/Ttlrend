@@ -90,6 +90,4 @@ if os.path.exists("/content/Telegram-Leecher/my_bot.session"):
     
 print("\rStarting Bot....")
 
-# Change directory and execute the script
-os.chdir('/kaggle/working/Telegram-Leecher/')
-proc = subprocess.run(['python3', '-m', 'colab_leecher'], check=True)
+!cd /kaggle/working/Telegram-Leecher/ && python3 -m colab_leecher #type:ignore
